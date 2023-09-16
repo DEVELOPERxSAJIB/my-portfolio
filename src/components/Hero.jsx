@@ -12,7 +12,7 @@ const Hero = () => {
         <div className="hero-content">
           <section className="w-full h-screen mx-auto">
             <div
-              className={`${styles.paddingX} absolute inset-0 top-[20%] max-w-7xl max-auto flex flex-row items-start gap-5`}
+              className={`${styles.paddingX} absolute inset-0 top-[34%] max-w-7xl max-auto flex flex-row items-start gap-5`}
             >
               <div className="felx flex-col justify-center items-center mt-5">
                 <div className="w-5 h-5 rounded-full bg-[#ED1846]" />
