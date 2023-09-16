@@ -1,7 +1,6 @@
 import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
-import emailjs from '@emailjs/browser';
 import CanvasLoader from "../Loader";
 
 
