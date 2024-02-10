@@ -1,84 +1,93 @@
-import { motion } from "framer-motion";
 import "./Hero.scss";
+import { motion } from "framer-motion";
 import { styles } from "../styles";
-// import { ComputersCanvas } from "./canvas/";
-import myPic from "../assets/sajib_dev.png";
 import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa6";
+import DownloadCV from "./DownloadCV";
+import hero from "../../public/hero/hero.png"
 
 const Hero = () => {
   return (
     <>
-      <div className="hero-area relative">
-        <div className="hero-content">
-          <section className="w-full h-screen mx-auto">
-            <div
-              className={`${styles.paddingX} absolute inset-0 top-[34%] max-w-7xl max-auto flex flex-row items-start gap-5`}
-            >
-              <div className="felx flex-col justify-center items-center mt-5">
-                <div className="w-5 h-5 rounded-full bg-[#ED1846]" />
+      <div className="hero-area overflow-hidden relative bg-[#09101A]">
+        <div className="container mx-auto max-w-[1150px]">
+          <div className="hero-content w-full flex justify-between">
+            <section className="h-screen flex items-center gap-10">
+              <div className="flex flex-row items-start gap-5">
+                <div className="flex flex-col justify-center items-center mt-5">
+                  <div className="w-5 h-5 rounded-full bg-[#55E6A5]" />
+                  <div className="w-1 sm:h-80 h-40 red-gradient mx-auto" />
+                </div>
 
-                <div className="w-1 sm:h-80 h-40 red-gradient mx-auto" />
-              </div>
-
-              <div>
-                <h1 className={`${styles.heroHeadText} text-black`}>
-                  Hi, Im <span className="text-[#ED1845]">Md Sajib</span>
-                </h1>
-                <p
-                  style={{
-                    fontWeight: "bold",
-                    fontSize: "18px",
-                  }}
-                  className={` mt-2 text-[#B00030]`}
-                >
-                  Enthusiastic Software Developer. <br /> Proficient in
-                  full-stack development, particularly the MERN Stack.
-                </p>
-                <div className="social-icons mt-[40px]">
-                  <a
-                    target="_black"
-                    href="https://www.facebook.com/Md.SaJib.Raajput/"
+                <div>
+                  <h1 className={`${styles.heroHeadText} text-white`}>
+                    Hi, I'm <span className="text-[#55E6A5]">Md Sajib</span>
+                  </h1>
+                  <p
+                    style={{
+                      fontWeight: "bold",
+                      fontSize: "18px",
+                    }}
+                    className={` mt-2 text-[#10e786]`}
                   >
-                    <div className="item">
-                      <FaFacebookF />
-                    </div>
-                  </a>
-                  <a target="_black" href="https://www.linkedin.com/in/mdsajibshikder/">
-                    <div className="item">
-                      <FaLinkedinIn />
-                    </div>
-                  </a>
-                  <a target="_black" href="https://twitter.com/MdSaJibShikder9">
-                    <div className="item">
-                      <FaTwitter />
-                    </div>
-                  </a>
+                    Enthusiastic Software Developer. <br /> Proficient in
+                    full-stack development, particularly the MERN Stack.
+                  </p>
+                  <div className="social-icons mt-[30px]">
+                    <a
+                      target="_black"
+                      href="https://www.facebook.com/Md.SaJib.Raajput/"
+                    >
+                      <div className="item">
+                        <FaFacebookF />
+                      </div>
+                    </a>
+                    <a
+                      target="_black"
+                      href="https://www.linkedin.com/in/mdsajibshikder/"
+                    >
+                      <div className="item">
+                        <FaLinkedinIn />
+                      </div>
+                    </a>
+                    <a
+                      target="_black"
+                      href="https://twitter.com/MdSaJibShikder9"
+                    >
+                      <div className="item">
+                        <FaTwitter />
+                      </div>
+                    </a>
+                  </div>
+
+                  <DownloadCV />
                 </div>
               </div>
-            </div>
-          </section>
-          <section className={`${styles.paddingX} forDis`}>
-            <div className="img-area shadow-lg">
-              <img src={myPic} alt="" />
-            </div>
-          </section>
+            </section>
+
+            <section>
+              {/* <img src={"https://png.pngtree.com/png-vector/20231214/ourmid/pngtree-3d-programmer-computer-character-cartoon-three-dimensional-cute-profession-png-image_11335864.png"} alt="" /> */}
+              <img className="shadow" src={hero} alt="" />
+            </section>
+          </div>
         </div>
-        <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
-          <a href="#about">
-            <div className="w-[35px] h-[64px] rounded-3xl border-4 border-[#333] flex justify-center items-start p-2">
-              <motion.div
-                animate={{
-                  y: [0, 24, 0],
-                }}
-                transition={{
-                  duration: 1.5,
-                  repeat: Infinity,
-                  repeatType: "loop",
-                }}
-                className="w-3 h-3 rounded-full bg-[#333] mb-1"
-              />
-            </div>
-          </a>
+        <div className="absolute xs:bottom-10 w-full flex justify-center items-center">
+          <div className="mx-auto overflow-hidden">
+            <a href="#about">
+              <div className="w-[35px] h-[64px] rounded-3xl border-4 border-[#333] flex justify-center items-center p-2">
+                <motion.div
+                  animate={{
+                    y: [0, 24, 0],
+                  }}
+                  transition={{
+                    duration: 1.5,
+                    repeat: Infinity,
+                    repeatType: "loop",
+                  }}
+                  className="w-3 h-3 rounded-full bg-[#333]"
+                />
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </>

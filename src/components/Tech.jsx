@@ -8,23 +8,20 @@ import { textVariant } from "../utils/motion";
 const Tech = () => {
   return (
     <>
-      <motion.div className="text-center mb-10" variants={textVariant()}>
-        <p className={styles.sectionSubText}>WHAT I AM WORKING WITH</p>
-        <h2 className={styles.sectionHeadText}>Technologies.</h2>
-      </motion.div>
+        <motion.div className="text-center mb-10" variants={textVariant()}>
+          <p className={styles.sectionSubText}>WHAT I AM WORKING WITH</p>
+          <h2 className={styles.sectionHeadText}>Technologies.</h2>
+        </motion.div>
 
-      <div className="flex flex-row flex-wrap justify-center gap-10">
-        {technologies.map((technologies) => {
-          return (
-            <div
-              key={technologies.name}
-              className="w-28 h-28"
-            >
-              <BallCanvas icon={technologies.icon} />
-            </div>
-          );
-        })}
-      </div>
+        <div className="flex flex-row flex-wrap justify-center gap-10">
+          {technologies.map((technologies) => {
+            return (
+              <div key={technologies.name} className="w-32 h-50">
+                <BallCanvas title={technologies.name} icon={technologies.icon} />
+              </div>
+            );
+          })}
+        </div>
     </>
   );
 };

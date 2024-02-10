@@ -24,17 +24,31 @@
 .social-icons {
   display: flex;
   .item {
-    background-color: #ed1845;
-    color: #fff;
+    background-color: #fff;
+    color: #10e786;
     margin-right: 7px;
     padding: 10px;
     border-radius: 50%;
     transition: 0.3s all ease-in-out;
     &:hover {
-      background-color: #b00030;
+      background-color: #10e786;
+      color: #fff;
       transition: 0.3s all ease-in-out;
       box-shadow: 5px 5px 10px rgba(237, 24, 69, 0.1);
     }
+  }
+}
+
+.download-cv {
+  margin-top: 40px;
+  max-width: 200px;
+  a {
+    padding: 12px 20px;
+    background-color: #55E6A5;
+    border-radius: 5px;
+    font-weight: 500;
+    color: #000;
+    cursor: pointer;
   }
 }
 
