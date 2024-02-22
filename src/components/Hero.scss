@@ -69,3 +69,10 @@
     display: none;
   }
 }
+
+@media (max-width: 645px) {
+  .hero-buttons {
+    display: block !important;
+    gap: 5px !important;
+  }
+}

@@ -32,7 +32,7 @@ const Hero = () => {
                         ]}
                         loop
                         typeSpeed={75}
-                        deleteSpeed={25}
+                        deleteSpeed={30}
                         delaySpeed={1500}
                       />{" "}
                     </span>
@@ -73,7 +73,7 @@ const Hero = () => {
                       </div>
                     </a>
                   </div>
-                  <div className="flex gap-5">
+                  <div className="flex gap-5 hero-buttons">
                     <HeroButton title={"Download CV"} icon={"cv"} />
                     <HeroButton
                       id="contact"

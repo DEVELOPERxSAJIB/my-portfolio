@@ -21,8 +21,8 @@ const Navbar = () => {
                 setActive(""), window.scrollTo(0, 0);
               }}
             >
-              <p className="text-[#32ff7e] uppercase text-[32px] font-bold logo-font cursor-pointer">
-                <span className="text-[#FFD700] logo-font">D </span>Sa
+              <p className="text-[#32ff7e] uppercase text-[36px] font-bold logo-font cursor-pointer">
+                <span className="text-[#FFD700] logo-font">D</span>Sa
               </p>
             </Link>
             <ul className="items-center list-none hidden sm:flex flex-row gap-6">

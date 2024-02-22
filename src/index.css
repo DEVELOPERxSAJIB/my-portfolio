@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch+Pop&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Protest+Riot&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -16,8 +16,8 @@
 }
 
 .logo-font {
-  font-family: "Rubik Glitch Pop", system-ui;
-  font-weight: 400;
+  font-family: "Lobster", sans-serif;
+  font-weight: 900;
   font-style: normal;
 }
 
@@ -53,7 +53,7 @@
 
 .green-pink-gradient {
   background: rgb(72, 0, 205);
-  background: linear-gradient(170deg, #32ff7e, 40%, #25a451, 95%, #13928b);
+  background: linear-gradient(170deg, #32ff7e, 50%, #25a451, 95%, #13928b);
   /* background: linear-gradient(170deg, #32ff7e, 38.9%, #217a40 97.5%); */
 }
 
@@ -276,7 +276,8 @@
 }
 
 .btn-hover.color-1 {
-  background-image: linear-gradient(to right, #32ff7e, #289c51, #18dcff, #0097e6);
+  background-image: linear-gradient(to right, #32ff7e, #289c51, #fffa65, #FFD700);
+  color: #000000;
 }
 .btn-hover.color-2 {
   background-image: linear-gradient(to right, #fffa65, #FFD700, #17c0eb, #32ff7e);
@@ -286,7 +287,7 @@
 
 /* Custom Text */
 .gradient-text {
-  background: linear-gradient(45deg, #32ff7e, #18dcff);
+  background: linear-gradient(90deg, #32ff7e, #FFD700);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
