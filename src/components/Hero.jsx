@@ -4,6 +4,7 @@ import { styles } from "../styles";
 import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa6";
 import hero from "../../public/hero/hero.png";
 import HeroButton from "./HeroButton";
+import { Typewriter } from "react-simple-typewriter";
 
 const Hero = () => {
   return (
@@ -11,7 +12,7 @@ const Hero = () => {
       <div className="hero-area overflow-hidden relative bg-[#09101A]">
         <div className="container mx-auto max-w-[1150px]">
           <div className="hero-content w-full flex justify-between">
-            <section className="h-screen flex items-center gap-10">
+            <section className="h-screen flex items-center gap-1">
               <div className="flex flex-row items-start gap-5">
                 <div className="flex flex-col justify-center items-center mt-5">
                   <div className="w-5 h-5 rounded-full bg-[#32ff7e]" />
@@ -20,7 +21,21 @@ const Hero = () => {
 
                 <div>
                   <h1 className={`${styles.heroHeadText} text-white`}>
-                    Hi, I'm <span className="gradient-text">Md Sajib</span>
+                    Hi, I'm{" "}
+                    <span className="gradient-text">
+                      <Typewriter
+                        words={[
+                          "Md Sajib",
+                          "a Designer",
+                          "Developer",
+                          "& Coder .",
+                        ]}
+                        loop
+                        typeSpeed={75}
+                        deleteSpeed={25}
+                        delaySpeed={1500}
+                      />{" "}
+                    </span>
                   </h1>
                   <p
                     style={{
@@ -60,7 +75,11 @@ const Hero = () => {
                   </div>
                   <div className="flex gap-5">
                     <HeroButton title={"Download CV"} icon={"cv"} />
-                    <HeroButton id="contact" title={"Let's Talk"} icon={"talk"} />
+                    <HeroButton
+                      id="contact"
+                      title={"Let's Talk"}
+                      icon={"talk"}
+                    />
                   </div>
                 </div>
               </div>
