@@ -21,6 +21,7 @@ const ServiceCard = ({ index, title, icon }) => (
       >
         <img
           src={icon}
+          style={{ scale: "1.2" }}
           alt='web-development'
           className='w-16 h-16 object-contain'
         />

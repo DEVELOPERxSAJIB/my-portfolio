@@ -2,8 +2,8 @@ import "./Hero.scss";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa6";
-import DownloadCV from "./DownloadCV";
-import hero from "../../public/hero/hero.png"
+import hero from "../../public/hero/hero.png";
+import HeroButton from "./HeroButton";
 
 const Hero = () => {
   return (
@@ -14,20 +14,20 @@ const Hero = () => {
             <section className="h-screen flex items-center gap-10">
               <div className="flex flex-row items-start gap-5">
                 <div className="flex flex-col justify-center items-center mt-5">
-                  <div className="w-5 h-5 rounded-full bg-[#55E6A5]" />
+                  <div className="w-5 h-5 rounded-full bg-[#32ff7e]" />
                   <div className="w-1 sm:h-80 h-40 red-gradient mx-auto" />
                 </div>
 
                 <div>
                   <h1 className={`${styles.heroHeadText} text-white`}>
-                    Hi, I'm <span className="text-[#55E6A5]">Md Sajib</span>
+                    Hi, I'm <span className="gradient-text">Md Sajib</span>
                   </h1>
                   <p
                     style={{
                       fontWeight: "bold",
                       fontSize: "18px",
                     }}
-                    className={` mt-2 text-[#10e786]`}
+                    className={`mt-2 text-[#32ff7e]`}
                   >
                     Enthusiastic Software Developer. <br /> Proficient in
                     full-stack development, particularly the MERN Stack.
@@ -58,15 +58,17 @@ const Hero = () => {
                       </div>
                     </a>
                   </div>
-
-                  <DownloadCV />
+                  <div className="flex gap-5">
+                    <HeroButton title={"Download CV"} icon={"cv"} />
+                    <HeroButton id="contact" title={"Let's Talk"} icon={"talk"} />
+                  </div>
                 </div>
               </div>
             </section>
 
             <section>
               {/* <img src={"https://png.pngtree.com/png-vector/20231214/ourmid/pngtree-3d-programmer-computer-character-cartoon-three-dimensional-cute-profession-png-image_11335864.png"} alt="" /> */}
-              <img className="shadow" src={hero} alt="" />
+              <img className="shadow forDis" src={hero} alt="" />
             </section>
           </div>
         </div>

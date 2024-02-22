@@ -1,8 +1,8 @@
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
-
+import { HiOutlineStatusOnline } from "react-icons/hi";
 import { styles } from "../styles";
-import { github, live } from "../assets";
+import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -36,7 +36,7 @@ const ProjectCard = ({
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
             <div className="flex flex-col gap-1">
               <div
-                onClick={() => window.open(live_link, "_blank")}
+                onClick={() => window.open(source_code_link, "_blank")}
                 className="green-pink-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
               >
                 <img
@@ -46,14 +46,10 @@ const ProjectCard = ({
                 />
               </div>
               <div
-                onClick={() => window.open(source_code_link, "_blank")}
-                className="bg-white w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                onClick={() => window.open(live_link, "_blank")}
+                className="blue-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
               >
-                <img
-                  src={live}
-                  alt="source code"
-                  className="w-1/2 h-1/2 object-contain"
-                />
+                <HiOutlineStatusOnline size={22} />
               </div>
             </div>
           </div>

@@ -55,7 +55,7 @@ const BallCanvas = ({ title, icon }) => {
 
     <figure className="max-w-lg">
       <img
-        className="h-[120px] w-[150px] rounded-lg"
+        className="h-[120px] w-[120px] rounded-lg"
         src={icon}
         alt="image description"
       />

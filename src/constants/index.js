@@ -5,31 +5,22 @@ import {
   web,
   javascript,
   typescript,
-  html,
-  css,
   reactjs,
   redux,
   tailwind,
   nodejs,
   mongodb,
   git,
-  figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
   nextjs,
   bs,
   express,
   aws,
   wolmart,
   cineplex,
-  admin
+  admin,
+  posapp,
+  myfolio,
 } from "../assets";
 
 export const navLinks = [
@@ -52,10 +43,6 @@ export const navLinks = [
   {
     id: "testi",
     title: "Reviews",
-  },
-  {
-    id: "contact",
-    title: "Contact",
   },
 ];
 
@@ -101,7 +88,7 @@ const technologies = [
   },
 
   {
-    name: "Bootstrap",
+    name: "React Bootstrap",
     icon: bs,
   },
   {
@@ -218,7 +205,7 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Wolmart Shop",
+    name: "ShoppingCart App",
     description: `It's an all-in-one Ecommerce and Inventory Management System for Discover Products, Making a
       purchase, Managing carts, Execute secure payments, and effortlessly completing checkouts 
       MongoDB, Node.js, Express.js, React.js, Redux, and JavaScript
@@ -238,8 +225,8 @@ const projects = [
       },
     ],
     image: wolmart,
-    source_code_link: "https://github.com/",
-    live_link : "https://www.youtube.com/watch?v=Ug9JnfUc5lU"
+    source_code_link: "https://github.com/DEVELOPERxSAJIB/shoppingcart-ecommerce",
+    live_link : "https://shopping-cart-client-dun.vercel.app"
   },
   {
     name: "Cineplex Book a Show ",
@@ -262,6 +249,7 @@ const projects = [
     ],
     image: cineplex,
     source_code_link: "https://github.com/DEVELOPERxSAJIB/ticket-booking",
+    live_link : "https://ticket-booking-client-vite.onrender.com/"
   },
   {
     name: "DOCCURE Admin Panel",
@@ -283,7 +271,50 @@ const projects = [
       },
     ],
     image: admin,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/DEVELOPERxSAJIB/doccure-admin-dashboard",
+    live_link : "https://doccure-dashboard-clinet.onrender.com/"
+  },
+  {
+    name: "Point of Sale Solutions",
+    description: `An Online Ticket Booking Application as well as purchase tickets, reserve seats for your favorite shows, and even create personalized Halls and Theatres - MERN Stack, Redux, AntD & Tailwind`,
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "supabase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: posapp,
+    source_code_link: "https://github.com/DEVELOPERxSAJIB/pointOfSells-App",
+    live_link : "https://pos-app-client-zarj.onrender.com/"
+  },
+  {
+    name: "Myfolio - Portfolio",
+    description: `Boasting proficiency in the coveted MERN Stack. From conceptualization to deployment, I breathe life into projects, user-centric solutions. Let's build something extraordinary together`,
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "supabase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: myfolio,
+    source_code_link: "https://github.com/DEVELOPERxSAJIB/my-portfolio",
+    live_link : "https://developersajib.vercel.app/"
   },
 ];
 

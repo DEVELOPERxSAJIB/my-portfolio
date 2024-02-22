@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <nav>
       <div
-        className={`w-full flex items-center py-7 fixed top-0 z-20 bg-[#141C27] shadow`}
+        className={`w-full flex items-center py-5 fixed top-0 z-20 bg-[#141C27] shadow`}
       >
         <div className="container mx-auto max-w-[1150px]">
           <div className="flex justify-between items-center">
@@ -21,11 +21,11 @@ const Navbar = () => {
                 setActive(""), window.scrollTo(0, 0);
               }}
             >
-              <p className="text-[#55E6A5] text-[24px] font-semibold cursor-pointer">
-                SaJib
+              <p className="text-[#32ff7e] uppercase text-[32px] font-bold logo-font cursor-pointer">
+                <span className="text-[#FFD700] logo-font">D </span>Sa
               </p>
             </Link>
-            <ul className="list-none hidden sm:flex flex-row gap-6">
+            <ul className="items-center list-none hidden sm:flex flex-row gap-6">
               {navLinks.map((item) => {
                 return (
                   <li
@@ -33,14 +33,21 @@ const Navbar = () => {
                     onClick={() => setActive(item.title)}
                     className={`${
                       active === item.title
-                        ? "text-[#37f760] font-semibold"
-                        : "text-[#55E6A5] font-semibold"
+                        ? "text-[#FFD700] font-semibold"
+                        : "text-[#32ff7e] font-semibold"
                     }`}
                   >
                     <a href={`#${item.id}`}>{item.title}</a>
                   </li>
                 );
               })}
+              <li className="font-semibold py-1 px-1 text-[#02050A] transition-opacity rounded">
+                <div className="buttons">
+                  <button style={{ margin : 0, width: "100px", height: "40px" }} className="btn-hover color-1">
+                    <a style={{margin : 0}} href="https://www.upwork.com/freelancers/~01baa01d9327439663">Hire Me</a>
+                  </button>
+                </div>
+              </li>
             </ul>
           </div>
         </div>
@@ -82,6 +89,17 @@ const Navbar = () => {
                   </li>
                 );
               })}
+              <li
+                style={{
+                  backgroundColor:
+                    "linear-gradient(180deg, #FFD700 1.9%, rgb(50, 255, 126) 97.5%)",
+                }}
+                className="font-semibold py-1 px-5 rounded border-2"
+              >
+                <a href="https://www.upwork.com/freelancers/~01baa01d9327439663">
+                  Hire Me
+                </a>
+              </li>
             </ul>
           </div>
         </div>

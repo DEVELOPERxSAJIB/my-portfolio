@@ -36,9 +36,13 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import wolmart from "./wolmart.png";
 import cineplex from "./cineplex.png";
-import admin from "./admin.png";
+import admin from "./doccure.png";
+import posapp from "./pospp.png"
+import myfolio from "./myfolio.png"
 
 export {
+  myfolio,
+  posapp,
   wolmart,
   admin,
   cineplex,

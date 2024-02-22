@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch+Pop&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -8,9 +9,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
   scroll-behavior: smooth;
   color-scheme: dark;
+}
+
+.logo-font {
+  font-family: "Rubik Glitch Pop", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .hash-span {
@@ -44,9 +52,13 @@
 }
 
 .green-pink-gradient {
-  background: red;
-  background: linear-gradient(90.13deg, #18cf7d 1.9%, #000 97.5%);
-  background: -webkit-linear-gradient(-90.13deg, #10e786 1.9%, #07bd6b.5%);
+  background: rgb(72, 0, 205);
+  background: linear-gradient(170deg, #32ff7e, 40%, #25a451, 95%, #13928b);
+  /* background: linear-gradient(170deg, #32ff7e, 38.9%, #217a40 97.5%); */
+}
+
+.blue-gradient {
+  background: linear-gradient(170deg, #18dcff 50%, #0097e6 92%);
 }
 
 .orange-text-gradient {
@@ -127,15 +139,17 @@
 }
 
 .shadow-card {
-  --tw-shadow: 0px 35px 120px -15px #04520d;
+  --tw-shadow: 0px 35px 120px -15px #0071f323;
   --tw-shadow-colored: 0px 35px 120px -15px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #000000), var(--tw-ring-shadow, 0 0 #fff), var(--tw-shadow);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #000000),
+    var(--tw-ring-shadow, 0 0 #fff), var(--tw-shadow);
 }
 
 .shadow-card2 {
   --tw-shadow: 0px 35px 120px -15px #00000095;
   --tw-shadow-colored: 0px 35px 120px -15px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 rgb(136, 0, 255)), var(--tw-ring-shadow, 0 0 #fff), var(--tw-shadow);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 rgb(136, 0, 255)),
+    var(--tw-ring-shadow, 0 0 #fff), var(--tw-shadow);
 }
 
 @keyframes mulShdSpin {
@@ -216,11 +230,64 @@
 }
 
 .vertical-timeline::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 18px;
   height: 100%;
   width: 4px;
-  background: #E6DEDD;
+  background: #e6dedd;
+}
+
+/* Custom button */
+.buttons {
+  text-align: center;
+}
+
+.btn-hover {
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+
+  border-radius: 5px;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+  outline: none;
+}
+
+.btn-hover.color-1 {
+  background-image: linear-gradient(to right, #32ff7e, #289c51, #18dcff, #0097e6);
+}
+.btn-hover.color-2 {
+  background-image: linear-gradient(to right, #fffa65, #FFD700, #17c0eb, #32ff7e);
+  color: #000000 !important;
+}
+
+
+/* Custom Text */
+.gradient-text {
+  background: linear-gradient(45deg, #32ff7e, #18dcff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
