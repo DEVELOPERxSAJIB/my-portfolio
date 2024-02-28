@@ -7,7 +7,7 @@ const HeroButton = ({ title, icon, id }) => {
       <div className="buttons">
         {icon === "cv" && (
           <a
-            href="https://developersajib.vercel.app/public/cv/Md_Sajib_Shikder.pdf"
+            href="/public/cv/Md_Sajib_Shikder.pdf"
             download={"Md_Sajib_Shikder.pdf"}
             className="flex justify-center items-center gap-2 cv-down btn-hover color-1"
           >
