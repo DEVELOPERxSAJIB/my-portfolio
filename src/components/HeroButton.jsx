@@ -1,5 +1,6 @@
 import { HiOutlineDownload } from "react-icons/hi";
 import { RiKakaoTalkLine } from "react-icons/ri";
+import resume from "../../src/cv/Md_Sajib_Shikder.pdf"
 
 const HeroButton = ({ title, icon, id }) => {
   return (
@@ -7,7 +8,7 @@ const HeroButton = ({ title, icon, id }) => {
       <div className="buttons">
         {icon === "cv" && (
           <a
-            href="/public/cv/Md_Sajib_Shikder.pdf"
+            href={resume}
             download={"Md_Sajib_Shikder.pdf"}
             className="flex justify-center items-center gap-2 cv-down btn-hover color-1"
           >
